@@ -51,10 +51,9 @@ namespace ViridiX.Linguist.Network
         /// </summary>
         /// <param name="obj"></param>
         /// <returns></returns>
-        public override bool Equals(object obj)
+        public override bool Equals(object? obj)
         {
-            XboxConnectionInformation info = obj as XboxConnectionInformation;
-            return info != null && (Name.Equals(info.Name) && Ip.Equals(info.Ip));
+            return obj is XboxConnectionInformation info && (Name.Equals(info.Name) && Ip.Equals(info.Ip));
         }
     }
 }

@@ -11,7 +11,7 @@ namespace ViridiX.Linguist.Tests
         public static ILogger Logger;
 
         public static XboxConnectionInformation TestXbox =
-            new XboxConnectionInformation(IPAddress.Parse("10.231.50.79"), "abc");
+            new XboxConnectionInformation(IPAddress.Parse("192.168.1.89"), "abc");
 
         [AssemblyInitialize]
         public static void Initialize(TestContext testContext)

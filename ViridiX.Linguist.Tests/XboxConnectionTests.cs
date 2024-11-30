@@ -1,7 +1,6 @@
 ﻿using System.Diagnostics;
 using System.Linq;
 using System.Net.NetworkInformation;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
 using ViridiX.Linguist.Network;
 using ViridiX.Mason.Logging;
 

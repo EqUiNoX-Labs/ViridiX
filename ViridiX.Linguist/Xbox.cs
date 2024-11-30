@@ -29,7 +29,7 @@ namespace ViridiX.Linguist
         /// <summary>
         /// The logger.
         /// </summary>
-        public readonly ILogger Logger;
+        public readonly ILogger? Logger;
 
         /// <summary>
         /// The last used connection address.
@@ -74,38 +74,38 @@ namespace ViridiX.Linguist
         /// <summary>
         /// TODO: description
         /// </summary>
-        public XboxMemory Memory { get; private set; }
+        public XboxMemory? Memory { get; private set; }
 
         /// <summary>
         /// TODO: description
         /// </summary>
-        public XboxSystem System { get; private set; }
+        public XboxSystem? System { get; private set; }
 
         /// <summary>
         /// TODO: description
         /// </summary>
-        public XboxKernel Kernel { get; private set; }
+        public XboxKernel? Kernel { get; private set; }
 
         /// <summary>
         /// TODO: description
         /// </summary>
-        public XboxProcess Process { get; private set; }
+        public XboxProcess? Process { get; private set; }
 
         /// <summary>
         /// TODO: description
         /// </summary>
-        public XboxDebugMonitor DebugMonitor { get; private set; }
+        public XboxDebugMonitor? DebugMonitor { get; private set; }
 
         /// <summary>
         /// TODO: description
         /// </summary>
-        public XboxFileSystem FileSystem { get; private set; }
+        public XboxFileSystem? FileSystem { get; private set; }
 
         /// <summary>
         /// Constructs the Xbox class.
         /// </summary>
         /// <param name="logger"></param>
-        public Xbox(ILogger logger = null)
+        public Xbox(ILogger? logger = null)
         {
             Logger = logger;
 
